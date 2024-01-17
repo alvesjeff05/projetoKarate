@@ -54,12 +54,14 @@ label{
   justify-content: column;
   margin-top: 150px;
   margin-left: 200px;
-  color: rgb(194, 192, 192);
-  background-color: black;
+  color: rgb(255, 255, 255);
+  background-color: rgba(0, 0, 0, 0.404);
+  text-shadow: 4px 3px 4px #000000;
   border-radius: 10px;
   padding-top: 30px;
   line-height: 2;
-
+  padding: 4px;
+  font-size: 17px;
 }
 
 ::-webkit-scrollbar-track {
@@ -72,22 +74,31 @@ label{
 }
 
 ::-webkit-scrollbar-thumb {
-    background: rgb(252, 155, 171);
+    background: #EF9595;
 }
 .close {
-    top: 31.5%;
-    position: absolute;
-    right: 11.5%;
-    width: 32px;
-    height: 32px;
+    width: 229px;
+    background-color: rgb(3, 116, 151);
+    margin: 10px;
+    padding: 15px 45px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: #EF9595;            
+    border-radius: 10px;
+    display: block;
+    border: none;
     cursor: pointer;
-    
-    &:hover {
-        opacity: 0.6;
-    }
+    font-weight: bolder;
 }
 
-
+.close:hover{
+    background-position: right center;
+    color: #EF9595;
+    text-decoration: none;
+    transform: scale(1.05);
+}
 
 .card:hover {
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
@@ -95,19 +106,6 @@ label{
 
 .container {
   padding: 2px 16px;
-}
-
-
-.bemVindo{
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 250px;
-    width: 330px;
-    margin-left: 50px;
-    margin-top: 50px;
-    padding: 5px;
-    color: white;
 }
 
 .btnTopico {
@@ -118,22 +116,28 @@ label{
     text-align: center;
     text-transform: uppercase;
     transition: 0.5s;
-    background-size: 200% auto;
-    color: white;            
+    /* background-size: 200% auto; */
+    color: #EF9595;            
     border-radius: 10px;
     display: block;
     border: none;
     cursor: pointer;
+    font-weight: bolder;
 }
 
 .btnTopico:hover {
-    background-position: right center;
-    color: #fff;
+    /* background-position: right center; */
+    color: #EF9595;
     text-decoration: none;
     transform: scale(1.05);
+    font-size: 16px;
 }
 
 p::selection{
     background-color: black;
-    color: rgb(252, 155, 171);
+    color: #EF9595;
+}
+
+.topicos, .card, .btnTopico{
+    position: relative;
 }
